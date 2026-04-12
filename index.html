@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Karthik Panyala — AI / ML Engineer portfolio: experience, skills, projects, and contact."
+    />
+    <title>Karthik Panyala · AI / ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="#hero" class="site-brand">Karthik Panyala</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="hero__inner">
+        <div class="hero__visual">
+          <img
+            class="hero__photo"
+            src="images/profile.jpg"
+            width="320"
+            height="320"
+            alt="Karthik Panyala"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero__content">
+          <h1 id="hero-heading" class="hero__title">Karthik Panyala</h1>
+          <p class="hero__eyebrow">AI / ML Engineer</p>
+          <p class="hero__subtitle">
+            Scalable ML systems, distributed data pipelines, and production MLOps — from forecasting and anomaly detection to
+            LLM-powered intelligence.
+          </p>
+          <p class="hero__location">St. Louis, MO</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
+            <a class="btn btn--ghost" href="resume.pdf">View Résumé</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="page">
+      <section id="about" class="section section--about" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="section__title">
+          <span class="section__num">01.</span> <span class="section__label">About Me</span>
+        </h2>
+        <div class="section__body about__body">
+          <p class="about__lead">
+            Experienced AI / ML Engineer with around 3+ years of experience, designing scalable machine learning solutions and
+            distributed data pipelines to solve complex analytical and predictive modeling problems.
+          </p>
+          <p>
+            I work with Python, PySpark, Apache Spark, deep learning, time-series forecasting, anomaly detection, and AWS-based
+            cloud platforms to build and deploy production-grade ML systems using modern MLOps practices.
+          </p>
+          <p>
+            I collaborate with cross-functional engineering, analytics, and compliance teams to deliver reliable, explainable,
+            and high-impact data-driven solutions that improve operational efficiency and decision intelligence.
+          </p>
+          <p>
+            My focus spans portfolio risk, fintech compliance, streaming analytics, and LLM-powered document intelligence — always
+            with an eye on observability, governance, and production reliability.
+          </p>
+          <a class="btn btn--ghost about__resume" href="resume.pdf">View Résumé</a>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="section__title section__title--center">
+          <span class="section__num">02.</span> <span class="section__label">Technical Skills</span>
+        </h2>
+        <div class="skill-grid">
+          <article class="skill-card">
+            <h3 class="skill-card__title">Programming &amp; data engineering</h3>
+            <ul class="skill-card__list">
+              <li>Python, SQL, PySpark, Scala, R, Bash</li>
+              <li>Data structures, algorithmic modeling</li>
+              <li>Distributed data processing</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">Machine learning &amp; statistical modeling</h3>
+            <ul class="skill-card__list">
+              <li>Supervised &amp; unsupervised learning, feature engineering</li>
+              <li>Ensemble modeling, time-series forecasting, anomaly detection</li>
+              <li>Survival analysis, calibration, imbalanced data</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">Deep learning &amp; sequence modeling</h3>
+            <ul class="skill-card__list">
+              <li>Neural networks, CNNs, RNNs, LSTMs</li>
+              <li>Transformer architectures, sequence modeling</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">LLMs &amp; generative AI</h3>
+            <ul class="skill-card__list">
+              <li>LLMs, RAG, embeddings, vector search</li>
+              <li>Prompt engineering, agentic workflows</li>
+              <li>LoRA, QLoRA, model quantization</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">MLOps / LLMOps &amp; deployment</h3>
+            <ul class="skill-card__list">
+              <li>MLflow, Kubeflow, Docker, Kubernetes, KServe, TorchServe</li>
+              <li>FastAPI, CI/CD, feature stores, versioning</li>
+              <li>Automated retraining, GPU optimization</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">Monitoring &amp; governance</h3>
+            <ul class="skill-card__list">
+              <li>SHAP, LIME, explainability, drift detection</li>
+              <li>Data quality, model monitoring, AI observability</li>
+              <li>Responsible AI practices</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">Cloud &amp; distributed systems</h3>
+            <ul class="skill-card__list">
+              <li>AWS — SageMaker, S3, EC2, EKS, EMR, Redshift</li>
+              <li>Azure ML, GCP, Spark, Kafka, Flink</li>
+              <li>Snowflake, BigQuery, Hive</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">Databases, analytics &amp; compliance</h3>
+            <ul class="skill-card__list">
+              <li>PostgreSQL, MongoDB, Cassandra, Redis, Elasticsearch</li>
+              <li>Warehousing, Tableau, Power BI, Streamlit, Plotly</li>
+              <li>Governance, lineage, GDPR, SOX, ethics frameworks</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" class="section__title">
+          <span class="section__num">03.</span> <span class="section__label">Work Experience</span>
+        </h2>
+        <div class="section__body section__body--stack">
+          <article class="job-card">
+            <div class="job-card__header">
+              <h3 class="job-card__title">AI / ML Engineer</h3>
+              <p class="job-card__company">Northern Trust, USA</p>
+              <p class="job-card__meta">Jul 2025 – Present</p>
+            </div>
+            <ul class="job-card__list">
+              <li>
+                Engineered distributed feature engineering pipelines using Python, PySpark, SQL, Apache Spark, AWS EMR, Amazon
+                S3, and Snowflake to analyze large financial datasets and generate predictive features for portfolio risk
+                forecasting models.
+              </li>
+              <li>
+                Developed time-series forecasting and ensemble models using LSTM, Transformer architectures, supervised learning,
+                PyTorch, TensorFlow, and feature engineering, improving portfolio volatility prediction accuracy by 28% across
+                institutional investment portfolios.
+              </li>
+              <li>
+                Implemented anomaly detection systems using Isolation Forest, Autoencoders, unsupervised learning, Apache Spark,
+                and Kafka streaming, identifying abnormal trading activity and liquidity disruptions across multi-asset investment
+                portfolios.
+              </li>
+              <li>
+                Architected financial intelligence workflows using Large Language Models, Retrieval-Augmented Generation,
+                embeddings, vector search with Elasticsearch, prompt engineering, LoRA, and QLoRA, enabling automated analysis of
+                regulatory documents and investment reports.
+              </li>
+              <li>
+                Optimized machine learning deployment pipelines using MLflow, Kubeflow, Docker, Kubernetes, KServe, CI/CD pipelines,
+                and AWS EKS, reducing manual portfolio risk monitoring workload by 40% through scalable AI infrastructure.
+              </li>
+              <li>
+                Built explainable AI and compliance analytics frameworks using SHAP, LIME, Tableau, Streamlit, PostgreSQL, and
+                data governance frameworks, increasing regulatory risk detection efficiency by 35% across automated financial
+                document intelligence systems.
+              </li>
+            </ul>
+          </article>
+
+          <article class="job-card">
+            <div class="job-card__header">
+              <h3 class="job-card__title">Machine Learning Engineer</h3>
+              <p class="job-card__company">Cybage Software, India</p>
+              <p class="job-card__meta">Jan 2021 – July 2023</p>
+            </div>
+            <ul class="job-card__list">
+              <li>
+                Designed end-to-end machine learning pipelines using Python, SQL, Apache Spark, and AWS, improving transaction
+                success and compliance risk detection accuracy by 34% across large-scale fintech datasets.
+              </li>
+              <li>
+                Developed predictive classification models using Logistic Regression, Random Forest, XGBoost, and Gradient
+                Boosting, reducing payment failures and AML false positives by 41% through structured feature engineering.
+              </li>
+              <li>
+                Implemented behavioral segmentation and anomaly detection using KMeans, DBSCAN, and Isolation Forest, improving
+                identification of abnormal transaction patterns by 29% in digital payment systems.
+              </li>
+              <li>
+                Built sequential transaction models using LSTM, time-series feature extraction, and deep learning workflows,
+                enhancing detection of retry and layering patterns by 26% across transactional data streams.
+              </li>
+              <li>
+                Optimized retry-success prediction services using machine learning scoring APIs, batch processing, and Docker-based
+                deployments, reducing unnecessary retries by 37% and stabilizing payment operations.
+              </li>
+              <li>
+                Improved compliance investigation efficiency by 32% by integrating SHAP explainability, model performance
+                dashboards, and risk scoring outputs, enabling faster and more accurate manual reviews.
+              </li>
+              <li>
+                Stabilized production ML workflows using Airflow orchestration, MLflow experiment tracking, and scheduled
+                retraining, achieving 45% higher model reliability across fintech and banking clients.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="section__title">
+          <span class="section__num">04.</span> <span class="section__label">Projects</span>
+        </h2>
+        <div class="section__body section__body--stack">
+          <article class="project-card">
+            <h3 class="project-card__title">
+              Enhancing Data Diversity &amp; Robustness for Multi-Organ Prediction in Laparoscopic Videos
+            </h3>
+            <div class="project-card__body">
+              <p>
+                This project focuses on improving the robustness and generalization of multi-organ prediction models trained on
+                Da Vinci laparoscopic surgical videos with limited data availability. Surgical datasets often suffer from
+                variability in lighting, camera angles, and patient anatomy, which impacts model performance in real-world
+                scenarios.
+              </p>
+              <p>
+                To address this, I applied domain adaptation techniques along with generative data augmentation
+                (GANs/diffusion-based methods) to synthetically expand the dataset and introduce variability. These
+                enhancements helped the model better generalize across unseen surgical conditions.
+              </p>
+              <p>
+                The project emphasizes solving real-world ML challenges such as data scarcity, domain shift, and model
+                robustness, and evaluates improvements using standard metrics like Dice score and IoU.
+              </p>
+            </div>
+            <p class="project-card__tech">
+              <strong>Tech stack:</strong> Python, PyTorch/TensorFlow, OpenCV, GANs/Diffusion Models, NumPy
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">FileFind – Local-First AI-Powered File Retrieval Agent</h3>
+            <div class="project-card__body">
+              <p>
+                FileFind is a privacy-focused AI agent that enables users to search and retrieve local files using natural
+                language queries. Unlike cloud-based solutions, this system runs entirely on-device using local LLMs via
+                Ollama, ensuring full data privacy.
+              </p>
+              <p>
+                The system interprets user queries in natural language and retrieves relevant files using semantic
+                understanding (via embeddings/LLM reasoning). It includes a lightweight interface for real-time interaction
+                and is designed to function efficiently without external APIs.
+              </p>
+              <p>
+                This project demonstrates end-to-end AI system design, combining LLM integration, local inference, and
+                user-centric application development.
+              </p>
+            </div>
+            <p class="project-card__tech">
+              <strong>Tech stack:</strong> Python, Ollama (Local LLMs), NLP, Embeddings (optional), Streamlit/CLI, File
+              System APIs
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section" aria-labelledby="education-heading">
+        <h2 id="education-heading" class="section__title">
+          <span class="section__num">05.</span> <span class="section__label">Education</span>
+        </h2>
+        <ul class="edu-grid">
+          <li class="edu-card">
+            <strong class="edu-card__school">Saint Louis University, USA</strong>
+            <span class="edu-card__degree">Master of Science in Artificial Intelligence</span>
+          </li>
+          <li class="edu-card">
+            <strong class="edu-card__school">St. Martin's Engineering College, India</strong>
+            <span class="edu-card__degree">Bachelor of Technology in Computer Science and Engineering</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section section--contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" class="section__title section__title--center">
+          <span class="section__num">06.</span> <span class="section__label">Get In Touch</span>
+        </h2>
+        <div class="contact-panel">
+          <p class="contact-panel__text">
+            I am open to conversations about AI/ML engineering, MLOps, and data-intensive systems. Reach out by email or phone,
+            or connect on LinkedIn.
+          </p>
+          <div class="contact-panel__links">
+            <a href="mailto:panyalakarthikreddy7@gmail.com">panyalakarthikreddy7@gmail.com</a>
+            <a href="tel:+15717627008">571-762-7008</a>
+            <a href="https://www.linkedin.com/in/your-profile" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Karthik Panyala</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
