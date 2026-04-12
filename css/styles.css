@@ -16,8 +16,8 @@
   --radius-sm: 6px;
   --max: min(97vw, 1580px);
   --pad-x: clamp(0.65rem, 2vw, 1.15rem);
-  --header-h: 5.125rem;
-  --section-pad-y: clamp(4.25rem, 10.5vw, 7rem);
+  --header-h: 4.75rem;
+  --section-pad-y: clamp(3.75rem, 9vw, 6.25rem);
   --section-gap: clamp(3rem, 6vw, 5rem);
   --font: "Inter", system-ui, -apple-system, sans-serif;
 }
@@ -30,8 +30,7 @@
 
 html {
   scroll-behavior: smooth;
-  /* Explicit root size so local vs GitHub match; % can track browser “default font size” */
-  font-size: 100%;
+  font-size: 94%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
@@ -39,8 +38,7 @@ html {
 body {
   margin: 0;
   font-family: var(--font);
-  /* Less vw growth: similar size on laptop whether window is ~900px or fullscreen 1600px */
-  font-size: clamp(1.15rem, 0.22vw + 1.06rem, 1.38rem);
+  font-size: clamp(1.02rem, 0.18vw + 0.95rem, 1.22rem);
   line-height: 1.65;
   color: var(--text);
   background-color: var(--bg);
@@ -85,7 +83,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  font-size: clamp(1.05rem, 0.35vw + 0.95rem, 1.25rem);
+  font-size: clamp(0.95rem, 0.28vw + 0.88rem, 1.12rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--heading);
@@ -117,7 +115,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem 1.75rem;
-  font-size: clamp(1rem, 0.325vw + 0.9rem, 1.15rem);
+  font-size: clamp(0.9rem, 0.28vw + 0.82rem, 1.05rem);
   font-weight: 500;
 }
 
@@ -135,9 +133,9 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.675rem;
+  padding: 0.7rem 1.35rem;
   font-family: inherit;
-  font-size: clamp(1.05rem, 0.275vw + 0.96rem, 1.225rem);
+  font-size: clamp(0.95rem, 0.22vw + 0.88rem, 1.08rem);
   font-weight: 600;
   border-radius: var(--radius-sm);
   text-decoration: none;
@@ -210,7 +208,7 @@ a:hover {
 
 .hero__photo {
   display: block;
-  width: clamp(300px, min(40vw, 30rem), 520px);
+  width: clamp(240px, min(34vw, 24rem), 420px);
   height: auto;
   aspect-ratio: 1;
   border-radius: var(--radius);
@@ -226,8 +224,8 @@ a:hover {
 }
 
 .hero__eyebrow {
-  margin: 0 0 1rem;
-  font-size: clamp(0.98rem, 0.3vw + 0.85rem, 1.15rem);
+  margin: 0 0 0.85rem;
+  font-size: clamp(0.85rem, 0.22vw + 0.78rem, 1.02rem);
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -236,7 +234,7 @@ a:hover {
 
 .hero__title {
   margin: 0 0 0.4rem;
-  font-size: clamp(2.65rem, 2.65vw + 1.35rem, 3.85rem);
+  font-size: clamp(2.1rem, 2vw + 1.1rem, 3.1rem);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.03em;
@@ -245,14 +243,14 @@ a:hover {
 
 .hero__subtitle {
   margin: 0 0 1rem;
-  font-size: clamp(1.22rem, 0.42vw + 1.08rem, 1.55rem);
+  font-size: clamp(1.05rem, 0.32vw + 0.95rem, 1.32rem);
   line-height: 1.65;
   color: var(--text);
 }
 
 .hero__location {
-  margin: 0 0 0.85rem;
-  font-size: clamp(1.15rem, 0.38vw + 1.02rem, 1.4rem);
+  margin: 0 0 0.75rem;
+  font-size: clamp(1rem, 0.28vw + 0.9rem, 1.2rem);
   color: var(--text-bright);
 }
 
@@ -261,15 +259,15 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.65rem 1rem;
-  margin: 0 0 1.65rem;
+  margin: 0 0 1.35rem;
 }
 
 .hero__social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.65rem;
-  height: 2.65rem;
+  width: 2.35rem;
+  height: 2.35rem;
   color: var(--heading-soft);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
@@ -286,8 +284,8 @@ a:hover {
 }
 
 .hero__social-icon {
-  width: 1.35rem;
-  height: 1.35rem;
+  width: 1.15rem;
+  height: 1.15rem;
   display: block;
 }
 
@@ -322,8 +320,8 @@ a:hover {
 }
 
 .section__title {
-  margin: 0 0 clamp(1.75rem, 4vw, 2.75rem);
-  font-size: clamp(1.85rem, 0.85vw + 1.35rem, 2.5rem);
+  margin: 0 0 clamp(1.5rem, 3.5vw, 2.35rem);
+  font-size: clamp(1.55rem, 0.65vw + 1.15rem, 2.15rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -357,14 +355,14 @@ a:hover {
 }
 
 .about__body p {
-  margin: 0 0 clamp(1.25rem, 2.5vw, 1.75rem);
-  font-size: clamp(1.2rem, 0.4vw + 1.065rem, 1.425rem);
+  margin: 0 0 clamp(1.1rem, 2.2vw, 1.5rem);
+  font-size: clamp(1.02rem, 0.32vw + 0.92rem, 1.22rem);
   line-height: 1.7;
   color: var(--text);
 }
 
 .about__lead {
-  font-size: clamp(1.31rem, 0.525vw + 1.135rem, 1.565rem) !important;
+  font-size: clamp(1.12rem, 0.4vw + 0.98rem, 1.32rem) !important;
   color: var(--text-bright) !important;
 }
 
@@ -395,7 +393,7 @@ a:hover {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: clamp(1.475rem, 2.65vw, 1.925rem);
+  padding: clamp(1.25rem, 2.2vw, 1.65rem);
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
@@ -405,8 +403,8 @@ a:hover {
 }
 
 .skill-card__title {
-  margin: 0 0 1rem;
-  font-size: clamp(1.125rem, 0.35vw + 0.985rem, 1.285rem);
+  margin: 0 0 0.85rem;
+  font-size: clamp(1rem, 0.28vw + 0.88rem, 1.12rem);
   font-weight: 600;
   color: var(--mint);
   line-height: 1.35;
@@ -417,7 +415,7 @@ a:hover {
   margin: 0;
   padding-left: 1.15rem;
   color: var(--text);
-  font-size: clamp(1.05rem, 0.275vw + 0.94rem, 1.215rem);
+  font-size: clamp(0.92rem, 0.22vw + 0.85rem, 1.06rem);
   line-height: 1.65;
 }
 
@@ -434,7 +432,7 @@ a:hover {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: clamp(1.675rem, 3.25vw, 2.25rem);
+  padding: clamp(1.4rem, 2.75vw, 1.9rem);
 }
 
 .job-card__header {
@@ -443,28 +441,28 @@ a:hover {
 
 .job-card__title {
   margin: 0;
-  font-size: clamp(1.3rem, 0.45vw + 1.125rem, 1.55rem);
+  font-size: clamp(1.12rem, 0.35vw + 0.98rem, 1.32rem);
   font-weight: 600;
   color: var(--heading);
 }
 
 .job-card__company {
   margin: 0.35rem 0 0;
-  font-size: clamp(1.1rem, 0.325vw + 0.985rem, 1.275rem);
+  font-size: clamp(0.98rem, 0.26vw + 0.88rem, 1.12rem);
   color: var(--mint);
   font-weight: 500;
 }
 
 .job-card__meta {
   margin: 0.4rem 0 0;
-  font-size: clamp(1rem, 0.275vw + 0.9rem, 1.125rem);
+  font-size: clamp(0.88rem, 0.22vw + 0.8rem, 1rem);
   color: var(--text);
 }
 
 .job-card__list {
   margin: 0;
   padding-left: 1.2rem;
-  font-size: clamp(1.09rem, 0.3vw + 0.975rem, 1.25rem);
+  font-size: clamp(0.98rem, 0.25vw + 0.88rem, 1.1rem);
   line-height: 1.65;
   color: var(--text);
 }
@@ -482,19 +480,19 @@ a:hover {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: clamp(1.675rem, 3.25vw, 2.25rem);
+  padding: clamp(1.4rem, 2.75vw, 1.9rem);
 }
 
 .project-card__title {
   margin: 0 0 0.35rem;
-  font-size: clamp(1.3rem, 0.425vw + 1.125rem, 1.525rem);
+  font-size: clamp(1.1rem, 0.32vw + 0.95rem, 1.28rem);
   font-weight: 600;
   color: var(--heading);
 }
 
 .project-card__date {
   margin: 0 0 1rem;
-  font-size: clamp(1rem, 0.275vw + 0.915rem, 1.15rem);
+  font-size: clamp(0.88rem, 0.22vw + 0.82rem, 1.02rem);
   color: var(--text);
 }
 
@@ -504,7 +502,7 @@ a:hover {
 
 .project-card__body p {
   margin: 0 0 0.85rem;
-  font-size: clamp(1.09rem, 0.3vw + 0.975rem, 1.25rem);
+  font-size: clamp(0.98rem, 0.25vw + 0.88rem, 1.1rem);
   line-height: 1.65;
   color: var(--text);
 }
@@ -515,7 +513,7 @@ a:hover {
 
 .project-card__tech {
   margin: 0;
-  font-size: clamp(1.02rem, 0.28vw + 0.94rem, 1.15rem);
+  font-size: clamp(0.92rem, 0.22vw + 0.82rem, 1.02rem);
   line-height: 1.6;
   color: var(--text-bright);
 }
@@ -528,7 +526,7 @@ a:hover {
 .project-card__list {
   margin: 0;
   padding-left: 1.2rem;
-  font-size: clamp(1.09rem, 0.3vw + 0.975rem, 1.25rem);
+  font-size: clamp(0.98rem, 0.25vw + 0.88rem, 1.1rem);
   line-height: 1.65;
   color: var(--text);
 }
@@ -556,19 +554,19 @@ a:hover {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: clamp(1.5rem, 2.65vw, 1.8rem);
+  padding: clamp(1.25rem, 2.2vw, 1.55rem);
 }
 
 .edu-card__school {
   display: block;
-  font-size: clamp(1.175rem, 0.375vw + 1.03rem, 1.35rem);
+  font-size: clamp(1.02rem, 0.3vw + 0.9rem, 1.18rem);
   font-weight: 600;
   color: var(--heading);
   margin-bottom: 0.35rem;
 }
 
 .edu-card__degree {
-  font-size: clamp(1.065rem, 0.285vw + 0.96rem, 1.22rem);
+  font-size: clamp(0.95rem, 0.24vw + 0.85rem, 1.06rem);
   color: var(--text);
   line-height: 1.55;
 }
@@ -582,7 +580,7 @@ a:hover {
 
 .contact-panel__text {
   margin: 0 0 1.5rem;
-  font-size: clamp(1.2rem, 0.4vw + 1.065rem, 1.415rem);
+  font-size: clamp(1.02rem, 0.32vw + 0.92rem, 1.2rem);
   line-height: 1.7;
   color: var(--text);
 }
@@ -596,7 +594,7 @@ a:hover {
 
 .contact-panel__links a {
   font-weight: 600;
-  font-size: clamp(1.1rem, 0.325vw + 0.985rem, 1.275rem);
+  font-size: clamp(0.98rem, 0.26vw + 0.88rem, 1.12rem);
 }
 
 /* Footer */
@@ -605,7 +603,7 @@ a:hover {
   margin: 0 auto;
   padding: 2.5rem var(--pad-x) 3rem;
   text-align: center;
-  font-size: clamp(1rem, 0.275vw + 0.9rem, 1.15rem);
+  font-size: clamp(0.88rem, 0.22vw + 0.8rem, 1.02rem);
   color: var(--text);
   border-top: 1px solid var(--border);
 }
