@@ -14,8 +14,9 @@
   --border: rgba(148, 163, 184, 0.12);
   --radius: 10px;
   --radius-sm: 6px;
-  --max: min(97vw, 1580px);
-  --pad-x: clamp(0.55rem, 1.6vw, 1rem);
+  /* Wider column on large screens — fewer empty side gutters */
+  --max: min(98vw, 1920px);
+  --pad-x: clamp(0.4rem, 1.1vw, 0.85rem);
   --header-h: 4.35rem;
   --section-pad-y: clamp(2.75rem, 7vw, 4.75rem);
   --section-gap: clamp(2.25rem, 5vw, 4rem);
